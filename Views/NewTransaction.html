@@ -6,10 +6,23 @@
 </head>
 <body>
 <h2>Transaction</h2>
-<p>Account Number: <textarea></textarea>
-    Type (D/W): <textarea></textarea>
-    Amount: <textarea></textarea></p>
+<p>Account Number: <textarea name="AccountNum" id="AccountNum" cols="20" rows="2"></textarea><br/>
+    Type (D/W): <textarea name="Type" id="Type" cols="20" rows="2"></textarea><br/>
+    Amount: <textarea name="Amount" id="Amount" cols="20" rows="2"></textarea></p><br/>
 
-<button>Proceed</button>
+
+<input type="submit" name="submit" onclick="myFunction(AccountNum.value, Type.value, Amount.value)">
+
 </body>
 </html>
+
+<script>
+
+    function myFunction(AccountNum, Type, Amount)
+    {
+        var accNum = AccountNum;
+        var type = Type;
+        var amt = Amount;
+        alert("Confirm transaction: \n Account number: " + accNum + "\nTransaction Type: " + type + "\nAmount:" + amt);
+    }
+</script>
