@@ -6,12 +6,14 @@
 </head>
 <body>
 <h2>Transaction</h2>
-<p>Account Number: <textarea name="AccountNum" id="AccountNum" cols="20" rows="2"></textarea><br/>
-    Type (D/W): <textarea name="Type" id="Type" cols="20" rows="2"></textarea><br/>
-    Amount: <textarea name="Amount" id="Amount" cols="20" rows="2"></textarea></p><br/>
+<p>
+<input type="text" name="accountNum" id="accountNum" placeholder="Account Number"><br>
+<input type="text" name="type" id="type" placeholder="Transaction Type (D/W)"><br>
+<input type="text" name="amount" id="amount" placeholder="Transaction Amount"><br>
 
 
-<input type="submit" name="submit" onclick="myFunction(AccountNum.value, Type.value, Amount.value)">
+
+<input type="submit" name="submit" onclick="myFunction(accountNum.value, type.value, amount.value)">
 
 </body>
 </html>
