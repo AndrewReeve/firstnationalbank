@@ -22,3 +22,4 @@ ie. Spending, Cheque, Savings
 * transAmount
 * transType(D/W)
 
+
